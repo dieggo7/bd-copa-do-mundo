@@ -1,0 +1,145 @@
+use copa_do_mundo;
+SHOW TABLES;
+DESC jogadores;
+
+insert into grupos (nome)
+values ("A"),
+("B"),
+("C"),
+("D"),
+("E"),
+("F"),
+("G");
+
+select * from grupos;
+
+insert into selecoes(nome, qtd_copa_vencida, grupos_id_grupo)
+values("Brasil", 5, 1),
+("Argentina", 3, 1),
+("Marrocos", 0, 1),
+("Haiti", 0, 1),
+
+("Escócia", 0, 2),
+("Espanha", 1, 2),
+("França", 2, 2),
+("Itália", 4, 2),
+
+("Sérvia", 0, 3),
+("Japão", 0, 3),
+("Croácia", 0, 3),
+("Nigéria", 0, 3),
+
+("Uruaguai", 2, 4),
+("Egito", 0, 4),
+("Paraguai", 0, 4),
+("Equador", 0, 4),
+
+("Colômbia", 0, 5),
+("Inglaterra", 1, 5),
+("Catar", 0, 5),
+("Estados Unidos", 0, 5),
+
+("Portugal", 0, 6),
+("Austrália", 0, 6),
+("Holanda", 0, 6),
+("Noruega", 0, 6),
+
+("Gana", 0, 7),
+("Panamá", 0, 7),
+("Tunísia", 0, 7),
+("Austrália", 0, 7);
+
+select * from selecoes;
+
+
+
+describe jogadores;
+
+
+select * from grupos;
+
+
+insert into jogadores (nome, n_camisa, id_selecao)
+values ("Neymar Jr", 10, 1),
+("Lionel Messi", 10, 2),
+("Yassine Bounou", 1, 3),
+("Duckens Nazon", 11, 4),
+("Andrew Robertson", 3, 5),
+("Álvaro Morata", 19, 6),
+("Kylian Mbappé", 10, 7),
+("Alessandro Bastoni", 3, 8),
+("Aleksandar Mitrović", 9, 9),
+("Kaoru Mitoma", 11, 10),
+("Luka Modrić", 10, 11),
+("Victor Osimhen", 9, 12),
+("Federico Valverde", 9, 13),
+("Mohamed Salah", 10, 14),
+("Julio Enciso", 10, 15),
+("Moisés Caicedo", 5, 16),
+("Luis Díaz", 11, 17),
+("Harry Kane", 9, 18),
+("Akram Afif", 11, 19),
+("Christian Pulisic", 10, 20),
+("Cristiano Ronaldo", 7, 21),
+("Mathew Ryan", 1, 22),
+("Virgil van Dijk", 4, 23),
+("Erling Haaland", 9, 24),
+("Mohammed Kudus", 10, 25),
+("Aníbal Godoy", 8, 26),
+("Wahbi Khazri", 10, 27),
+("Mathew Ryan", 1, 28);
+
+describe estadios;
+
+insert into estadios (nome, cidade, pais, capacidade)
+values("Allianz Parque", "São Paulo", "Brasil", "43.000"),
+("Rungrado May Day", "Pyongyang", "Coreia do Norte", "150.000"),
+("Camp Nou", "Barcelona", "Espanha", "105.000"),
+("Wembley Stadium", "Londres", "Inglaterra", "90.000"),
+("Rose Bowl", "Pasadena", "Estados Unidos", "91.000");
+
+desc partidas;
+
+select * from 
+
+insert into partidas (id_selecao_a, id_selecao_b, id_estadio, gol_selecao_a, gol_selecao_b, horario, bilheteria)
+values (1, 2, 1, 3, 2, "2026-02-05 15:00:00", "40.000"),
+(3, 4, 2, 0, 0, "2026-02-08 13:00:00", "120.000"),
+(5, 6, 1, 0, 5, "2026-02-12 14:00:00", "100.00"),
+(7, 8, 3, 1, 0, "2026-02-15 14:30:00", "60.000"),
+(9, 10, 5, 0, 2, "2026-02-17 16:30:00", "50.000"),
+(11, 12, 4, 3, 1, "2026-02-18 19:00:00", "86.000"),
+(13, 14, 3, 1, 1, "2026-02-19 14:00:00", "100.000"),
+(15, 16, 1, 2, 2, "2026-02-20 20:00:00", "45.000"),
+(17, 18, 2, 4, 1, "2026-02-21 15:30:00", "62.000"),
+(19, 20, 3, 1, 5, "2026-02-22 19:15:00", "85.000"),
+(21, 22, 4, 3, 0, "2026-02-23 17:45:00", "112.000"),
+(23, 24, 5, 6, 3, "2026-02-24 21:00:00", "73.000"),
+(25, 26, 1, 2, 4, "2026-02-25 14:20:00", "98.000"),
+(27, 28, 2, 5, 6, "2026-02-26 18:30:00", "125.000");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
